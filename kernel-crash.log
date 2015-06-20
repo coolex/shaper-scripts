@@ -1,0 +1,1002 @@
+Jun 20 11:05:43 igw kernel: HTB: quantum of class 10001 is big. Consider r2q change.
+Jun 20 11:05:43 igw kernel: HTB: quantum of class 10001 is big. Consider r2q change.
+Jun 20 11:05:43 igw kernel: ip_set: protocol 6
+Jun 20 11:05:56 igw login[3628]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Jun 20 11:05:56 igw login[3730]: ROOT LOGIN  on '/dev/tty1'
+Jun 20 11:06:21 igw kernel: IPv6: ADDRCONF(NETDEV_UP): eth2: link is not ready
+Jun 20 11:06:21 igw kernel: 8021q: adding VLAN 0 to HW filter on device eth2
+Jun 20 11:06:21 igw kernel: e1000: eth2 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Jun 20 11:06:21 igw kernel: IPv6: ADDRCONF(NETDEV_CHANGE): eth2: link becomes ready
+Jun 20 11:07:06 igw /etc/init.d/net.eth2[3735]: net.eth2: caught SIGINT, aborting
+Jun 20 11:07:21 igw kernel: INFO: rcu_sched detected stalls on CPUs/tasks: {} (detected by 7, t=60002 jiffies, g=5259, c=5258, q=0)
+Jun 20 11:07:21 igw kernel: INFO: Stall ended before state dump start
+Jun 20 11:08:21 igw kernel: INFO: rcu_sched self-detected stall on CPU { 7}  (t=60000 jiffies g=5260 c=5259 q=0)
+Jun 20 11:08:21 igw kernel: sending NMI to all CPUs:
+Jun 20 11:08:21 igw kernel: NMI backtrace for cpu 0
+Jun 20 11:08:21 igw kernel: CPU: 0 PID: 0 Comm: swapper/0 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:08:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:08:21 igw kernel: task: ffffffff81c10480 ti: ffffffff81c00000 task.ti: ffffffff81c00000
+Jun 20 11:08:21 igw kernel: RIP: 0010:[<ffffffff81031aa1>]  [<ffffffff81031aa1>] read_hpet+0x11/0x20
+Jun 20 11:08:21 igw kernel: RSP: 0018:ffff88013fc03eb0  EFLAGS: 00000013
+Jun 20 11:08:21 igw kernel: RAX: 0000000037e8ef0f RBX: ffffffff81c1d840 RCX: 0000000000000003
+Jun 20 11:08:21 igw kernel: RDX: 0000000000000000 RSI: 00000052a22a4f00 RDI: ffffffff81c1d840
+Jun 20 11:08:21 igw kernel: RBP: ffff88013fc03eb0 R08: 00000052a21b0cc0 R09: ffff88013fc03de0
+Jun 20 11:08:21 igw kernel: R10: 0000000000000002 R11: 0000000000000005 R12: 0000000000000162
+Jun 20 11:08:21 igw kernel: R13: 000000000009e1e6 R14: 0000000000000004 R15: 00000052a22a4f00
+Jun 20 11:08:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc00000(0000) knlGS:0000000000000000
+Jun 20 11:08:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:08:21 igw kernel: CR2: 00000000006a9440 CR3: 0000000001c0b000 CR4: 00000000000007f0
+Jun 20 11:08:21 igw kernel: Stack:
+Jun 20 11:08:21 igw kernel:  ffff88013fc03ed8 ffffffff8108909e ffff88013fc0bc80 00000052a22a4f00
+Jun 20 11:08:21 igw kernel:  0000000000000000 ffff88013fc03f00 ffffffff8108f4f4 ffff88013fc0bea0
+Jun 20 11:08:21 igw kernel:  00000052a21c24ae ffff88013fc0bda0 ffff88013fc03f10 ffffffff81090cbf
+Jun 20 11:08:21 igw kernel: Call Trace:
+Jun 20 11:08:21 igw kernel:  <IRQ>
+Jun 20 11:08:21 igw kernel:
+Jun 20 11:08:21 igw kernel:  [<ffffffff8108909e>] ktime_get+0x3e/0xc0
+Jun 20 11:08:21 igw kernel:  [<ffffffff8108f4f4>] clockevents_program_event+0x34/0xe0
+Jun 20 11:08:21 igw kernel:  [<ffffffff81090cbf>] tick_program_event+0x1f/0x30
+Jun 20 11:08:21 igw kernel:  [<ffffffff81060c62>] hrtimer_interrupt+0x122/0x220
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102be22>] local_apic_timer_interrupt+0x32/0x60
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102c16a>] smp_apic_timer_interrupt+0x3a/0x50
+Jun 20 11:08:21 igw kernel:  [<ffffffff816d190a>] apic_timer_interrupt+0x6a/0x70
+Jun 20 11:08:21 igw kernel:  <EOI>
+Jun 20 11:08:21 igw kernel:
+Jun 20 11:08:21 igw kernel:  [<ffffffff8100b3d6>] ? default_idle+0x6/0x10
+Jun 20 11:08:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:08:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:08:21 igw kernel:  [<ffffffff816c2402>] rest_init+0x72/0x80
+Jun 20 11:08:21 igw kernel:  [<ffffffff81ca7e2f>] start_kernel+0x3c4/0x3cf
+Jun 20 11:08:21 igw kernel:  [<ffffffff81ca7874>] ? repair_env_string+0x5c/0x5c
+Jun 20 11:08:21 igw kernel:  [<ffffffff81ca75ad>] x86_64_start_reservations+0x2a/0x2c
+Jun 20 11:08:21 igw kernel:  [<ffffffff81ca767b>] x86_64_start_kernel+0xcc/0xcf
+Jun 20 11:08:21 igw kernel: Code: 00 29 c7 ba 00 00 00 00 b8 c2 ff ff ff 83 ff 7f 5d 0f 4f c2 c3 0f 1f 44 00 00 55 48 8b 05 e0 25 de 00 48 89 e5 8b 80 f0 00 00 00 <89> c0 5d c3 66 66 2e 0f 1f 84 00 00 00 00 00 8b 0d ba 25 de 00
+Jun 20 11:08:21 igw kernel: NMI backtrace for cpu 1
+Jun 20 11:08:21 igw kernel: CPU: 1 PID: 0 Comm: swapper/1 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:08:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:08:21 igw kernel: task: ffff88013aba6460 ti: ffff88013abc0000 task.ti: ffff88013abc0000
+Jun 20 11:08:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:08:21 igw kernel: RSP: 0018:ffff88013abc1ed8  EFLAGS: 00000246
+Jun 20 11:08:21 igw kernel: RAX: ffff88013fc4c240 RBX: ffff88013abc1fd8 RCX: 0100000000000000
+Jun 20 11:08:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc4c240
+Jun 20 11:08:21 igw kernel: RBP: ffff88013abc1ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:08:21 igw kernel: R10: 000000000000000e R11: ffff88013abf1028 R12: ffffffff81c84498
+Jun 20 11:08:21 igw kernel: R13: ffff88013abc1fd8 R14: ffff88013abc1fd8 R15: ffff88013abc1fd8
+Jun 20 11:08:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc40000(0000) knlGS:0000000000000000
+Jun 20 11:08:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:08:21 igw kernel: CR2: 00007f9c2693e6f0 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:08:21 igw kernel: Stack:
+Jun 20 11:08:21 igw kernel:  ffff88013abc1ee8 ffffffff8100bbda ffff88013abc1f28 ffffffff8107e351
+Jun 20 11:08:21 igw kernel:  ffff88013abc1fd8 0000000000000001 0000000000000001 0000000000000000
+Jun 20 11:08:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc1f48 ffffffff8102aa0f
+Jun 20 11:08:21 igw kernel: Call Trace:
+Jun 20 11:08:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:08:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:08:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:08:21 igw kernel: NMI backtrace for cpu 7
+Jun 20 11:08:21 igw kernel: CPU: 7 PID: 1460 Comm: kworker/7:1 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:08:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:08:21 igw kernel: Workqueue: ipv6_addrconf addrconf_dad_work
+Jun 20 11:08:21 igw kernel: task: ffff88013a442480 ti: ffff88013a37c000 task.ti: ffff88013a37c000
+Jun 20 11:08:21 igw kernel: RIP: 0010:[<ffffffff8102d32c>]  [<ffffffff8102d32c>] default_send_IPI_mask_sequence_phys+0x9c/0xd0
+Jun 20 11:08:21 igw kernel: RSP: 0018:ffff88013fdc3dc8  EFLAGS: 00000046
+Jun 20 11:08:21 igw kernel: RAX: 0000000000000400 RBX: 000000000000a032 RCX: 0000000000000030
+Jun 20 11:08:21 igw kernel: RDX: 0000000000000007 RSI: 0000000000000007 RDI: 0000000000000300
+Jun 20 11:08:21 igw kernel: RBP: ffff88013fdc3e00 R08: ffffffff81c84498 R09: 00000000000004e6
+Jun 20 11:08:21 igw kernel: R10: 61206f7420494d4e R11: 3a73555043206c6c R12: ffffffff81c84498
+Jun 20 11:08:21 igw kernel: R13: 0000000000000400 R14: 0000000000000082 R15: 0000000000000002
+Jun 20 11:08:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fdc0000(0000) knlGS:0000000000000000
+Jun 20 11:08:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:08:21 igw kernel: CR2: 00000000006aa058 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:08:21 igw kernel: Stack:
+Jun 20 11:08:21 igw kernel:  0000000700000008 0000000000000007 0000000000002710 ffffffff81c33400
+Jun 20 11:08:21 igw kernel:  ffffffff81c844a0 ffffffff81c33400 0000000000000007 ffff88013fdc3e10
+Jun 20 11:08:21 igw kernel:  ffffffff81030482 ffff88013fdc3e28 ffffffff8102d506 ffff88013fdcc400
+Jun 20 11:08:21 igw kernel: Call Trace:
+Jun 20 11:08:21 igw kernel:  <IRQ>
+Jun 20 11:08:21 igw kernel:
+Jun 20 11:08:21 igw kernel:  [<ffffffff81030482>] physflat_send_IPI_all+0x12/0x20
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102d506>] arch_trigger_all_cpu_backtrace+0x46/0x80
+Jun 20 11:08:21 igw kernel:  [<ffffffff8108754e>] rcu_check_callbacks+0x3ae/0x670
+Jun 20 11:08:21 igw kernel:  [<ffffffff8104ba92>] update_process_times+0x42/0x70
+Jun 20 11:08:21 igw kernel:  [<ffffffff81091561>] tick_sched_handle.isra.17+0x31/0x40
+Jun 20 11:08:21 igw kernel:  [<ffffffff81091689>] tick_sched_timer+0x39/0x60
+Jun 20 11:08:21 igw kernel:  [<ffffffff81060501>] __run_hrtimer.isra.32+0x41/0xf0
+Jun 20 11:08:21 igw kernel:  [<ffffffff81060c25>] hrtimer_interrupt+0xe5/0x220
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102be22>] local_apic_timer_interrupt+0x32/0x60
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102c16a>] smp_apic_timer_interrupt+0x3a/0x50
+Jun 20 11:08:21 igw kernel:  [<ffffffff816d190a>] apic_timer_interrupt+0x6a/0x70
+Jun 20 11:08:21 igw kernel:  <EOI>
+Jun 20 11:08:21 igw kernel:
+Jun 20 11:08:21 igw kernel:  [<ffffffff816d0215>] ? _raw_spin_lock_bh+0x25/0x40
+Jun 20 11:08:21 igw kernel:  [<ffffffff815a5c69>] ? qdisc_dequeue_skb+0x29/0x70
+Jun 20 11:08:21 igw kernel:  [<ffffffff8146f828>] __imq_nf_queue+0x1a8/0x5f0
+Jun 20 11:08:21 igw kernel:  [<ffffffff8146fe1c>] imq_nf_queue+0x1ac/0x370
+Jun 20 11:08:21 igw kernel:  [<ffffffff815d13fd>] nf_queue+0x13d/0x180
+Jun 20 11:08:21 igw kernel:  [<ffffffff81589d50>] ? list_netdevice+0x120/0x120
+Jun 20 11:08:21 igw kernel:  [<ffffffff815d0766>] nf_hook_slow+0xb6/0x150
+Jun 20 11:08:21 igw kernel:  [<ffffffff81589d50>] ? list_netdevice+0x120/0x120
+Jun 20 11:08:21 igw kernel:  [<ffffffff816793b0>] ip6_finish_output2+0x320/0x420
+Jun 20 11:08:21 igw kernel:  [<ffffffff8167bcc4>] ip6_finish_output+0x84/0xd0
+Jun 20 11:08:21 igw kernel:  [<ffffffff815d14a2>] nf_reinject+0x62/0x170
+Jun 20 11:08:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:08:21 igw kernel:  [<ffffffff815b3a94>] ? htb_dequeue+0x364/0x7e0
+Jun 20 11:08:21 igw kernel:  [<ffffffff8146f5c9>] imq_dev_xmit+0x89/0xc0
+Jun 20 11:08:21 igw kernel:  [<ffffffff8158beb3>] dev_hard_start_xmit+0x2c3/0x510
+Jun 20 11:08:21 igw kernel:  [<ffffffff8146f851>] __imq_nf_queue+0x1d1/0x5f0
+Jun 20 11:08:21 igw kernel:  [<ffffffff8146fe1c>] imq_nf_queue+0x1ac/0x370
+Jun 20 11:08:21 igw kernel:  [<ffffffff815d13fd>] nf_queue+0x13d/0x180
+Jun 20 11:08:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:08:21 igw kernel:  [<ffffffff815d0766>] nf_hook_slow+0xb6/0x150
+Jun 20 11:08:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:08:21 igw kernel:  [<ffffffff8167bd7e>] ip6_output+0x6e/0xc0
+Jun 20 11:08:21 igw kernel:  [<ffffffff8168ec7b>] ndisc_send_skb+0x20b/0x290
+Jun 20 11:08:21 igw kernel:  [<ffffffff8168fcb7>] ndisc_send_ns+0xc7/0x120
+Jun 20 11:08:21 igw kernel:  [<ffffffff81681bf0>] addrconf_dad_work+0x220/0x2e0
+Jun 20 11:08:21 igw kernel:  [<ffffffff810571e6>] process_one_work+0x146/0x3d0
+Jun 20 11:08:21 igw kernel:  [<ffffffff81057dd9>] worker_thread+0x119/0x390
+Jun 20 11:08:21 igw kernel:  [<ffffffff81057cc0>] ? manage_workers.isra.26+0x290/0x290
+Jun 20 11:08:21 igw kernel:  [<ffffffff8105d954>] kthread+0xc4/0xe0
+Jun 20 11:08:21 igw kernel:  [<ffffffff8105d890>] ? kthread_create_on_node+0x170/0x170
+Jun 20 11:08:21 igw kernel:  [<ffffffff816d0c98>] ret_from_fork+0x58/0x90
+Jun 20 11:08:21 igw kernel:  [<ffffffff8105d890>] ? kthread_create_on_node+0x170/0x170
+Jun 20 11:08:21 igw kernel: Code: 90 8b 0c 25 00 b3 5f ff 80 e5 10 75 f2 89 f0 c1 e0 18 89 04 25 10 b3 5f ff 41 83 ff 02 44 89 e8 41 0f 45 c7 89 04 25 00 b3 5f ff <eb> 92 41 56 9d 48 83 c4 10 5b 41 5c 41 5d 41 5e 41 5f 5d c3 48
+Jun 20 11:08:21 igw kernel: NMI backtrace for cpu 5
+Jun 20 11:08:21 igw kernel: CPU: 5 PID: 0 Comm: swapper/5 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:08:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:08:21 igw kernel: task: ffff88013abc8920 ti: ffff88013abd0000 task.ti: ffff88013abd0000
+Jun 20 11:08:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:08:21 igw kernel: RSP: 0018:ffff88013abd1ed8  EFLAGS: 00000246
+Jun 20 11:08:21 igw kernel: RAX: ffff88013fd4c240 RBX: ffff88013abd1fd8 RCX: 0100000000000000
+Jun 20 11:08:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd4c240
+Jun 20 11:08:21 igw kernel: RBP: ffff88013abd1ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:08:21 igw kernel: R10: 0000000000000004 R11: ffff88013a431428 R12: ffffffff81c84498
+Jun 20 11:08:21 igw kernel: R13: ffff88013abd1fd8 R14: ffff88013abd1fd8 R15: ffff88013abd1fd8
+Jun 20 11:08:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd40000(0000) knlGS:0000000000000000
+Jun 20 11:08:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:08:21 igw kernel: CR2: 00000000006a9440 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:08:21 igw kernel: Stack:
+Jun 20 11:08:21 igw kernel:  ffff88013abd1ee8 ffffffff8100bbda ffff88013abd1f28 ffffffff8107e351
+Jun 20 11:08:21 igw kernel:  ffff88013abd1fd8 0000000000000005 0000000000000005 0000000000000000
+Jun 20 11:08:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abd1f48 ffffffff8102aa0f
+Jun 20 11:08:21 igw kernel: Call Trace:
+Jun 20 11:08:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:08:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:08:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:08:21 igw kernel: NMI backtrace for cpu 4
+Jun 20 11:08:21 igw kernel: CPU: 4 PID: 0 Comm: swapper/4 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:08:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:08:21 igw kernel: task: ffff88013abc8000 ti: ffff88013abc6000 task.ti: ffff88013abc6000
+Jun 20 11:08:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:08:21 igw kernel: RSP: 0018:ffff88013abc7ed8  EFLAGS: 00000246
+Jun 20 11:08:21 igw kernel: RAX: ffff88013fd0c240 RBX: ffff88013abc7fd8 RCX: 0100000000000000
+Jun 20 11:08:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd0c240
+Jun 20 11:08:21 igw kernel: RBP: ffff88013abc7ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:08:21 igw kernel: R10: 0000000000000004 R11: ffff88013a425428 R12: ffffffff81c84498
+Jun 20 11:08:21 igw kernel: R13: ffff88013abc7fd8 R14: ffff88013abc7fd8 R15: ffff88013abc7fd8
+Jun 20 11:08:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd00000(0000) knlGS:0000000000000000
+Jun 20 11:08:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:08:21 igw kernel: CR2: 000000000096b1b8 CR3: 0000000139875000 CR4: 00000000000007e0
+Jun 20 11:08:21 igw kernel: Stack:
+Jun 20 11:08:21 igw kernel:  ffff88013abc7ee8 ffffffff8100bbda ffff88013abc7f28 ffffffff8107e351
+Jun 20 11:08:21 igw kernel:  ffff88013abc7fd8 0000000000000004 0000000000000004 0000000000000000
+Jun 20 11:08:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc7f48 ffffffff8102aa0f
+Jun 20 11:08:21 igw kernel: Call Trace:
+Jun 20 11:08:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:08:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:08:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:08:21 igw kernel: NMI backtrace for cpu 3
+Jun 20 11:08:21 igw kernel: CPU: 3 PID: 0 Comm: swapper/3 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:08:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:08:21 igw kernel: task: ffff88013aba76a0 ti: ffff88013abc4000 task.ti: ffff88013abc4000
+Jun 20 11:08:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:08:21 igw kernel: RSP: 0018:ffff88013abc5ed8  EFLAGS: 00000246
+Jun 20 11:08:21 igw kernel: RAX: ffff88013fccc240 RBX: ffff88013abc5fd8 RCX: 0100000000000000
+Jun 20 11:08:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fccc240
+Jun 20 11:08:21 igw kernel: RBP: ffff88013abc5ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:08:21 igw kernel: R10: 0000000000000012 R11: ffff88013a411028 R12: ffffffff81c84498
+Jun 20 11:08:21 igw kernel: R13: ffff88013abc5fd8 R14: ffff88013abc5fd8 R15: ffff88013abc5fd8
+Jun 20 11:08:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fcc0000(0000) knlGS:0000000000000000
+Jun 20 11:08:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:08:21 igw kernel: CR2: 00007fd809abc090 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:08:21 igw kernel: Stack:
+Jun 20 11:08:21 igw kernel:  ffff88013abc5ee8 ffffffff8100bbda ffff88013abc5f28 ffffffff8107e351
+Jun 20 11:08:21 igw kernel:  ffff88013abc5fd8 0000000000000003 0000000000000003 0000000000000000
+Jun 20 11:08:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc5f48 ffffffff8102aa0f
+Jun 20 11:08:21 igw kernel: Call Trace:
+Jun 20 11:08:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:08:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:08:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:08:21 igw kernel: NMI backtrace for cpu 2
+Jun 20 11:08:21 igw kernel: CPU: 2 PID: 0 Comm: swapper/2 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:08:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:08:21 igw kernel: task: ffff88013aba6d80 ti: ffff88013abc2000 task.ti: ffff88013abc2000
+Jun 20 11:08:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:08:21 igw kernel: RSP: 0018:ffff88013abc3ed8  EFLAGS: 00000246
+Jun 20 11:08:21 igw kernel: RAX: ffff88013fc8c240 RBX: ffff88013abc3fd8 RCX: 0100000000000000
+Jun 20 11:08:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc8c240
+Jun 20 11:08:21 igw kernel: RBP: ffff88013abc3ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:08:21 igw kernel: R10: 0000000000000400 R11: 0000000000000000 R12: ffffffff81c84498
+Jun 20 11:08:21 igw kernel: R13: ffff88013abc3fd8 R14: ffff88013abc3fd8 R15: ffff88013abc3fd8
+Jun 20 11:08:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc80000(0000) knlGS:0000000000000000
+Jun 20 11:08:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:08:21 igw kernel: CR2: 00007f15d443e9e0 CR3: 00000000bb82f000 CR4: 00000000000007e0
+Jun 20 11:08:21 igw kernel: Stack:
+Jun 20 11:08:21 igw kernel:  ffff88013abc3ee8 ffffffff8100bbda ffff88013abc3f28 ffffffff8107e351
+Jun 20 11:08:21 igw kernel:  ffff88013abc3fd8 0000000000000002 0000000000000002 0000000000000000
+Jun 20 11:08:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc3f48 ffffffff8102aa0f
+Jun 20 11:08:21 igw kernel: Call Trace:
+Jun 20 11:08:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:08:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:08:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:08:21 igw kernel: NMI backtrace for cpu 6
+Jun 20 11:08:21 igw kernel: CPU: 6 PID: 0 Comm: swapper/6 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:08:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:08:21 igw kernel: task: ffff88013abc9240 ti: ffff88013abd2000 task.ti: ffff88013abd2000
+Jun 20 11:08:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:08:21 igw kernel: RSP: 0018:ffff88013abd3ed8  EFLAGS: 00000246
+Jun 20 11:08:21 igw kernel: RAX: ffff88013fd8c240 RBX: ffff88013abd3fd8 RCX: 0100000000000000
+Jun 20 11:08:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd8c240
+Jun 20 11:08:21 igw kernel: RBP: ffff88013abd3ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:08:21 igw kernel: R10: 0000000000000004 R11: ffff88013a43d428 R12: ffffffff81c84498
+Jun 20 11:08:21 igw kernel: R13: ffff88013abd3fd8 R14: ffff88013abd3fd8 R15: ffff88013abd3fd8
+Jun 20 11:08:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd80000(0000) knlGS:0000000000000000
+Jun 20 11:08:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:08:21 igw kernel: CR2: 00007f14a232f000 CR3: 00000000bb3c7000 CR4: 00000000000007e0
+Jun 20 11:08:21 igw kernel: Stack:
+Jun 20 11:08:21 igw kernel:  ffff88013abd3ee8 ffffffff8100bbda ffff88013abd3f28 ffffffff8107e351
+Jun 20 11:08:21 igw kernel:  ffff88013abd3fd8 0000000000000006 0000000000000006 0000000000000000
+Jun 20 11:08:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abd3f48 ffffffff8102aa0f
+Jun 20 11:08:21 igw kernel: Call Trace:
+Jun 20 11:08:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:08:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:08:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:08:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:10:01 igw cron[4052]: (root) CMD (test -x /usr/sbin/run-crons && /usr/sbin/run-crons)
+Jun 20 11:11:21 igw kernel: INFO: rcu_sched self-detected stall on CPU { 7}  (t=240006 jiffies g=5260 c=5259 q=0)
+Jun 20 11:11:21 igw kernel: sending NMI to all CPUs:
+Jun 20 11:11:21 igw kernel: NMI backtrace for cpu 0
+Jun 20 11:11:21 igw kernel: CPU: 0 PID: 0 Comm: swapper/0 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:11:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:11:21 igw kernel: task: ffffffff81c10480 ti: ffffffff81c00000 task.ti: ffffffff81c00000
+Jun 20 11:11:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:11:21 igw kernel: RSP: 0018:ffffffff81c01f20  EFLAGS: 00000246
+Jun 20 11:11:21 igw kernel: RAX: ffff88013fc0c240 RBX: ffffffff81c01fd8 RCX: 0100000000000000
+Jun 20 11:11:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc0c240
+Jun 20 11:11:21 igw kernel: RBP: ffffffff81c01f20 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:11:21 igw kernel: R10: 0000000000000400 R11: 0000000000000000 R12: ffffffff81c84498
+Jun 20 11:11:21 igw kernel: R13: ffffffff81c01fd8 R14: ffffffff81c01fd8 R15: ffffffff81c01fd8
+Jun 20 11:11:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc00000(0000) knlGS:0000000000000000
+Jun 20 11:11:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:11:21 igw kernel: CR2: 00007f8e549458f4 CR3: 00000000b8014000 CR4: 00000000000007f0
+Jun 20 11:11:21 igw kernel: Stack:
+Jun 20 11:11:21 igw kernel:  ffffffff81c01f30 ffffffff8100bbda ffffffff81c01f70 ffffffff8107e351
+Jun 20 11:11:21 igw kernel:  ffffffff81c01fd8 ffffffffffffffff ffffffff81d29900 ffff88013ffb7300
+Jun 20 11:11:21 igw kernel:  ffffffff81d300a0 0000000000000000 ffffffff81c01f80 ffffffff816c2402
+Jun 20 11:11:21 igw kernel: Call Trace:
+Jun 20 11:11:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:11:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:11:21 igw kernel:  [<ffffffff816c2402>] rest_init+0x72/0x80
+Jun 20 11:11:21 igw kernel:  [<ffffffff81ca7e2f>] start_kernel+0x3c4/0x3cf
+Jun 20 11:11:21 igw kernel:  [<ffffffff81ca7874>] ? repair_env_string+0x5c/0x5c
+Jun 20 11:11:21 igw kernel:  [<ffffffff81ca75ad>] x86_64_start_reservations+0x2a/0x2c
+Jun 20 11:11:21 igw kernel:  [<ffffffff81ca767b>] x86_64_start_kernel+0xcc/0xcf
+Jun 20 11:11:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:11:21 igw kernel: NMI backtrace for cpu 1
+Jun 20 11:11:21 igw kernel: CPU: 1 PID: 0 Comm: swapper/1 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:11:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:11:21 igw kernel: task: ffff88013aba6460 ti: ffff88013abc0000 task.ti: ffff88013abc0000
+Jun 20 11:11:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:11:21 igw kernel: RSP: 0018:ffff88013abc1ed8  EFLAGS: 00000246
+Jun 20 11:11:21 igw kernel: RAX: ffff88013fc4c240 RBX: ffff88013abc1fd8 RCX: 0100000000000000
+Jun 20 11:11:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc4c240
+Jun 20 11:11:21 igw kernel: RBP: ffff88013abc1ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:11:21 igw kernel: R10: 000000000000000f R11: ffff88013abf1428 R12: ffffffff81c84498
+Jun 20 11:11:21 igw kernel: R13: ffff88013abc1fd8 R14: ffff88013abc1fd8 R15: ffff88013abc1fd8
+Jun 20 11:11:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc40000(0000) knlGS:0000000000000000
+Jun 20 11:11:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:11:21 igw kernel: CR2: 00007f8e55b61580 CR3: 0000000139a2e000 CR4: 00000000000007e0
+Jun 20 11:11:21 igw kernel: Stack:
+Jun 20 11:11:21 igw kernel:  ffff88013abc1ee8 ffffffff8100bbda ffff88013abc1f28 ffffffff8107e351
+Jun 20 11:11:21 igw kernel:  ffff88013abc1fd8 0000000000000001 0000000000000001 0000000000000000
+Jun 20 11:11:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc1f48 ffffffff8102aa0f
+Jun 20 11:11:21 igw kernel: Call Trace:
+Jun 20 11:11:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:11:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:11:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:11:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:11:21 igw kernel: NMI backtrace for cpu 2
+Jun 20 11:11:21 igw kernel: CPU: 2 PID: 0 Comm: swapper/2 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:11:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:11:21 igw kernel: task: ffff88013aba6d80 ti: ffff88013abc2000 task.ti: ffff88013abc2000
+Jun 20 11:11:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:11:21 igw kernel: RSP: 0018:ffff88013abc3ed8  EFLAGS: 00000246
+Jun 20 11:11:21 igw kernel: RAX: ffff88013fc8c240 RBX: ffff88013abc3fd8 RCX: 0100000000000000
+Jun 20 11:11:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc8c240
+Jun 20 11:11:21 igw kernel: RBP: ffff88013abc3ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:11:21 igw kernel: R10: 0000000000000400 R11: 0000000000000000 R12: ffffffff81c84498
+Jun 20 11:11:21 igw kernel: R13: ffff88013abc3fd8 R14: ffff88013abc3fd8 R15: ffff88013abc3fd8
+Jun 20 11:11:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc80000(0000) knlGS:0000000000000000
+Jun 20 11:11:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:11:21 igw kernel: CR2: 00007fcaa760b565 CR3: 00000000bb82f000 CR4: 00000000000007e0
+Jun 20 11:11:21 igw kernel: Stack:
+Jun 20 11:11:21 igw kernel:  ffff88013abc3ee8 ffffffff8100bbda ffff88013abc3f28 ffffffff8107e351
+Jun 20 11:11:21 igw kernel:  ffff88013abc3fd8 0000000000000002 0000000000000002 0000000000000000
+Jun 20 11:11:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc3f48 ffffffff8102aa0f
+Jun 20 11:11:21 igw kernel: Call Trace:
+Jun 20 11:11:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:11:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:11:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:11:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:11:21 igw kernel: NMI backtrace for cpu 4
+Jun 20 11:11:21 igw kernel: CPU: 4 PID: 0 Comm: swapper/4 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:11:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:11:21 igw kernel: task: ffff88013abc8000 ti: ffff88013abc6000 task.ti: ffff88013abc6000
+Jun 20 11:11:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:11:21 igw kernel: RSP: 0018:ffff88013abc7ed8  EFLAGS: 00000246
+Jun 20 11:11:21 igw kernel: RAX: ffff88013fd0c240 RBX: ffff88013abc7fd8 RCX: 0100000000000000
+Jun 20 11:11:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd0c240
+Jun 20 11:11:21 igw kernel: RBP: ffff88013abc7ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:11:21 igw kernel: R10: 000000000000000f R11: ffff88013a425428 R12: ffffffff81c84498
+Jun 20 11:11:21 igw kernel: R13: ffff88013abc7fd8 R14: ffff88013abc7fd8 R15: ffff88013abc7fd8
+Jun 20 11:11:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd00000(0000) knlGS:0000000000000000
+Jun 20 11:11:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:11:21 igw kernel: CR2: 00007f72685a01a8 CR3: 00000000bb2e2000 CR4: 00000000000007e0
+Jun 20 11:11:21 igw kernel: Stack:
+Jun 20 11:11:21 igw kernel:  ffff88013abc7ee8 ffffffff8100bbda ffff88013abc7f28 ffffffff8107e351
+Jun 20 11:11:21 igw kernel:  ffff88013abc7fd8 0000000000000004 0000000000000004 0000000000000000
+Jun 20 11:11:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc7f48 ffffffff8102aa0f
+Jun 20 11:11:21 igw kernel: Call Trace:
+Jun 20 11:11:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:11:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:11:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:11:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:11:21 igw kernel: NMI backtrace for cpu 5
+Jun 20 11:11:21 igw kernel: CPU: 5 PID: 0 Comm: swapper/5 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:11:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:11:21 igw kernel: task: ffff88013abc8920 ti: ffff88013abd0000 task.ti: ffff88013abd0000
+Jun 20 11:11:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:11:21 igw kernel: RSP: 0018:ffff88013abd1ed8  EFLAGS: 00000246
+Jun 20 11:11:21 igw kernel: RAX: ffff88013fd4c240 RBX: ffff88013abd1fd8 RCX: 0100000000000000
+Jun 20 11:11:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd4c240
+Jun 20 11:11:21 igw kernel: RBP: ffff88013abd1ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:11:21 igw kernel: R10: 000000000000000f R11: ffff88013a431428 R12: ffffffff81c84498
+Jun 20 11:11:21 igw kernel: R13: ffff88013abd1fd8 R14: ffff88013abd1fd8 R15: ffff88013abd1fd8
+Jun 20 11:11:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd40000(0000) knlGS:0000000000000000
+Jun 20 11:11:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:11:21 igw kernel: CR2: 00000000006a9440 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:11:21 igw kernel: Stack:
+Jun 20 11:11:21 igw kernel:  ffff88013abd1ee8 ffffffff8100bbda ffff88013abd1f28 ffffffff8107e351
+Jun 20 11:11:21 igw kernel:  ffff88013abd1fd8 0000000000000005 0000000000000005 0000000000000000
+Jun 20 11:11:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abd1f48 ffffffff8102aa0f
+Jun 20 11:11:21 igw kernel: Call Trace:
+Jun 20 11:11:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:11:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:11:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:11:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:11:21 igw kernel: NMI backtrace for cpu 7
+Jun 20 11:11:21 igw kernel: CPU: 7 PID: 1460 Comm: kworker/7:1 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:11:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:11:21 igw kernel: Workqueue: ipv6_addrconf addrconf_dad_work
+Jun 20 11:11:21 igw kernel: task: ffff88013a442480 ti: ffff88013a37c000 task.ti: ffff88013a37c000
+Jun 20 11:11:21 igw kernel: RIP: 0010:[<ffffffff8102d32c>]  [<ffffffff8102d32c>] default_send_IPI_mask_sequence_phys+0x9c/0xd0
+Jun 20 11:11:21 igw kernel: RSP: 0018:ffff88013fdc3dc8  EFLAGS: 00000046
+Jun 20 11:11:21 igw kernel: RAX: 0000000000000400 RBX: 000000000000a032 RCX: 0000000000000030
+Jun 20 11:11:21 igw kernel: RDX: 0000000000000007 RSI: 0000000000000007 RDI: 0000000000000300
+Jun 20 11:11:21 igw kernel: RBP: ffff88013fdc3e00 R08: ffffffff81c84498 R09: 00000000000005dd
+Jun 20 11:11:21 igw kernel: R10: 61206f7420494d4e R11: 3a73555043206c6c R12: ffffffff81c84498
+Jun 20 11:11:21 igw kernel: R13: 0000000000000400 R14: 0000000000000082 R15: 0000000000000002
+Jun 20 11:11:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fdc0000(0000) knlGS:0000000000000000
+Jun 20 11:11:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:11:21 igw kernel: CR2: 00000000006aa058 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:11:21 igw kernel: Stack:
+Jun 20 11:11:21 igw kernel:  0000000700000008 0000000000000007 0000000000002710 ffffffff81c33400
+Jun 20 11:11:21 igw kernel:  ffffffff81c844a0 ffffffff81c33400 0000000000000007 ffff88013fdc3e10
+Jun 20 11:11:21 igw kernel:  ffffffff81030482 ffff88013fdc3e28 ffffffff8102d506 ffff88013fdcc400
+Jun 20 11:11:21 igw kernel: Call Trace:
+Jun 20 11:11:21 igw kernel:  <IRQ>
+Jun 20 11:11:21 igw kernel:
+Jun 20 11:11:21 igw kernel:  [<ffffffff81030482>] physflat_send_IPI_all+0x12/0x20
+Jun 20 11:11:21 igw kernel:  [<ffffffff8102d506>] arch_trigger_all_cpu_backtrace+0x46/0x80
+Jun 20 11:11:21 igw kernel:  [<ffffffff8108754e>] rcu_check_callbacks+0x3ae/0x670
+Jun 20 11:11:21 igw kernel:  [<ffffffff8104ba92>] update_process_times+0x42/0x70
+Jun 20 11:11:21 igw kernel:  [<ffffffff81091561>] tick_sched_handle.isra.17+0x31/0x40
+Jun 20 11:11:21 igw kernel:  [<ffffffff81091689>] tick_sched_timer+0x39/0x60
+Jun 20 11:11:21 igw kernel:  [<ffffffff81060501>] __run_hrtimer.isra.32+0x41/0xf0
+Jun 20 11:11:21 igw kernel:  [<ffffffff81060c25>] hrtimer_interrupt+0xe5/0x220
+Jun 20 11:11:21 igw kernel:  [<ffffffff8102be22>] local_apic_timer_interrupt+0x32/0x60
+Jun 20 11:11:21 igw kernel:  [<ffffffff8102c16a>] smp_apic_timer_interrupt+0x3a/0x50
+Jun 20 11:11:21 igw kernel:  [<ffffffff816d190a>] apic_timer_interrupt+0x6a/0x70
+Jun 20 11:11:21 igw kernel:  <EOI>
+Jun 20 11:11:21 igw kernel:
+Jun 20 11:11:21 igw kernel:  [<ffffffff816d0215>] ? _raw_spin_lock_bh+0x25/0x40
+Jun 20 11:11:21 igw kernel:  [<ffffffff815a5c69>] ? qdisc_dequeue_skb+0x29/0x70
+Jun 20 11:11:21 igw kernel:  [<ffffffff8146f828>] __imq_nf_queue+0x1a8/0x5f0
+Jun 20 11:11:21 igw kernel:  [<ffffffff8146fe1c>] imq_nf_queue+0x1ac/0x370
+Jun 20 11:11:21 igw kernel:  [<ffffffff815d13fd>] nf_queue+0x13d/0x180
+Jun 20 11:11:21 igw kernel:  [<ffffffff81589d50>] ? list_netdevice+0x120/0x120
+Jun 20 11:11:21 igw kernel:  [<ffffffff815d0766>] nf_hook_slow+0xb6/0x150
+Jun 20 11:11:21 igw kernel:  [<ffffffff81589d50>] ? list_netdevice+0x120/0x120
+Jun 20 11:11:21 igw kernel:  [<ffffffff816793b0>] ip6_finish_output2+0x320/0x420
+Jun 20 11:11:21 igw kernel:  [<ffffffff8167bcc4>] ip6_finish_output+0x84/0xd0
+Jun 20 11:11:21 igw kernel:  [<ffffffff815d14a2>] nf_reinject+0x62/0x170
+Jun 20 11:11:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:11:21 igw kernel:  [<ffffffff815b3a94>] ? htb_dequeue+0x364/0x7e0
+Jun 20 11:11:21 igw kernel:  [<ffffffff8146f5c9>] imq_dev_xmit+0x89/0xc0
+Jun 20 11:11:21 igw kernel:  [<ffffffff8158beb3>] dev_hard_start_xmit+0x2c3/0x510
+Jun 20 11:11:21 igw kernel:  [<ffffffff8146f851>] __imq_nf_queue+0x1d1/0x5f0
+Jun 20 11:11:21 igw kernel:  [<ffffffff8146fe1c>] imq_nf_queue+0x1ac/0x370
+Jun 20 11:11:21 igw kernel:  [<ffffffff815d13fd>] nf_queue+0x13d/0x180
+Jun 20 11:11:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:11:21 igw kernel:  [<ffffffff815d0766>] nf_hook_slow+0xb6/0x150
+Jun 20 11:11:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:11:21 igw kernel:  [<ffffffff8167bd7e>] ip6_output+0x6e/0xc0
+Jun 20 11:11:21 igw kernel:  [<ffffffff8168ec7b>] ndisc_send_skb+0x20b/0x290
+Jun 20 11:11:21 igw kernel:  [<ffffffff8168fcb7>] ndisc_send_ns+0xc7/0x120
+Jun 20 11:11:21 igw kernel:  [<ffffffff81681bf0>] addrconf_dad_work+0x220/0x2e0
+Jun 20 11:11:21 igw kernel:  [<ffffffff810571e6>] process_one_work+0x146/0x3d0
+Jun 20 11:11:21 igw kernel:  [<ffffffff81057dd9>] worker_thread+0x119/0x390
+Jun 20 11:11:21 igw kernel:  [<ffffffff81057cc0>] ? manage_workers.isra.26+0x290/0x290
+Jun 20 11:11:21 igw kernel:  [<ffffffff8105d954>] kthread+0xc4/0xe0
+Jun 20 11:11:21 igw kernel:  [<ffffffff8105d890>] ? kthread_create_on_node+0x170/0x170
+Jun 20 11:11:21 igw kernel:  [<ffffffff816d0c98>] ret_from_fork+0x58/0x90
+Jun 20 11:11:21 igw kernel:  [<ffffffff8105d890>] ? kthread_create_on_node+0x170/0x170
+Jun 20 11:11:21 igw kernel: Code: 90 8b 0c 25 00 b3 5f ff 80 e5 10 75 f2 89 f0 c1 e0 18 89 04 25 10 b3 5f ff 41 83 ff 02 44 89 e8 41 0f 45 c7 89 04 25 00 b3 5f ff <eb> 92 41 56 9d 48 83 c4 10 5b 41 5c 41 5d 41 5e 41 5f 5d c3 48
+Jun 20 11:11:21 igw kernel: NMI backtrace for cpu 3
+Jun 20 11:11:21 igw kernel: CPU: 3 PID: 0 Comm: swapper/3 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:11:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:11:21 igw kernel: task: ffff88013aba76a0 ti: ffff88013abc4000 task.ti: ffff88013abc4000
+Jun 20 11:11:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:11:21 igw kernel: RSP: 0018:ffff88013abc5ed8  EFLAGS: 00000246
+Jun 20 11:11:21 igw kernel: RAX: ffff88013fccc240 RBX: ffff88013abc5fd8 RCX: 0100000000000000
+Jun 20 11:11:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fccc240
+Jun 20 11:11:21 igw kernel: RBP: ffff88013abc5ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:11:21 igw kernel: R10: 0000000000000016 R11: ffff88013a411028 R12: ffffffff81c84498
+Jun 20 11:11:21 igw kernel: R13: ffff88013abc5fd8 R14: ffff88013abc5fd8 R15: ffff88013abc5fd8
+Jun 20 11:11:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fcc0000(0000) knlGS:0000000000000000
+Jun 20 11:11:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:11:21 igw kernel: CR2: 00007f68076776f0 CR3: 00000000bb2e2000 CR4: 00000000000007e0
+Jun 20 11:11:21 igw kernel: Stack:
+Jun 20 11:11:21 igw kernel:  ffff88013abc5ee8 ffffffff8100bbda ffff88013abc5f28 ffffffff8107e351
+Jun 20 11:11:21 igw kernel:  ffff88013abc5fd8 0000000000000003 0000000000000003 0000000000000000
+Jun 20 11:11:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc5f48 ffffffff8102aa0f
+Jun 20 11:11:21 igw kernel: Call Trace:
+Jun 20 11:11:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:11:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:11:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:11:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:11:21 igw kernel: NMI backtrace for cpu 6
+Jun 20 11:11:21 igw kernel: CPU: 6 PID: 0 Comm: swapper/6 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:11:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:11:21 igw kernel: task: ffff88013abc9240 ti: ffff88013abd2000 task.ti: ffff88013abd2000
+Jun 20 11:11:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:11:21 igw kernel: RSP: 0018:ffff88013abd3ed8  EFLAGS: 00000246
+Jun 20 11:11:21 igw kernel: RAX: ffff88013fd8c240 RBX: ffff88013abd3fd8 RCX: 0100000000000000
+Jun 20 11:11:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd8c240
+Jun 20 11:11:21 igw kernel: RBP: ffff88013abd3ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:11:21 igw kernel: R10: 000000000000000f R11: ffff88013a43d428 R12: ffffffff81c84498
+Jun 20 11:11:21 igw kernel: R13: ffff88013abd3fd8 R14: ffff88013abd3fd8 R15: ffff88013abd3fd8
+Jun 20 11:11:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd80000(0000) knlGS:0000000000000000
+Jun 20 11:11:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:11:21 igw kernel: CR2: 00007f14a232f000 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:11:21 igw kernel: Stack:
+Jun 20 11:11:21 igw kernel:  ffff88013abd3ee8 ffffffff8100bbda ffff88013abd3f28 ffffffff8107e351
+Jun 20 11:11:21 igw kernel:  ffff88013abd3fd8 0000000000000006 0000000000000006 0000000000000000
+Jun 20 11:11:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abd3f48 ffffffff8102aa0f
+Jun 20 11:11:21 igw kernel: Call Trace:
+Jun 20 11:11:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:11:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:11:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:11:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:11:21 igw kernel: INFO: rcu_sched detected stalls on CPUs/tasks: { 7} (detected by 0, t=240007 jiffies, g=5260, c=5259, q=0)
+Jun 20 11:14:21 igw kernel: INFO: rcu_sched self-detected stall on CPU { 7}  (t=420010 jiffies g=5260 c=5259 q=0)
+Jun 20 11:14:21 igw kernel: sending NMI to all CPUs:
+Jun 20 11:14:21 igw kernel: NMI backtrace for cpu 0
+Jun 20 11:14:21 igw kernel: CPU: 0 PID: 0 Comm: swapper/0 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:14:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:14:21 igw kernel: task: ffffffff81c10480 ti: ffffffff81c00000 task.ti: ffffffff81c00000
+Jun 20 11:14:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:14:21 igw kernel: RSP: 0018:ffffffff81c01f20  EFLAGS: 00000246
+Jun 20 11:14:21 igw kernel: RAX: ffff88013fc0c240 RBX: ffffffff81c01fd8 RCX: 0100000000000000
+Jun 20 11:14:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc0c240
+Jun 20 11:14:21 igw kernel: RBP: ffffffff81c01f20 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:14:21 igw kernel: R10: 0000000000000400 R11: 0000000000000000 R12: ffffffff81c84498
+Jun 20 11:14:21 igw kernel: R13: ffffffff81c01fd8 R14: ffffffff81c01fd8 R15: ffffffff81c01fd8
+Jun 20 11:14:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc00000(0000) knlGS:0000000000000000
+Jun 20 11:14:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:14:21 igw kernel: CR2: 00007f8e549458f4 CR3: 00000000b8014000 CR4: 00000000000007f0
+Jun 20 11:14:21 igw kernel: Stack:
+Jun 20 11:14:21 igw kernel:  ffffffff81c01f30 ffffffff8100bbda ffffffff81c01f70 ffffffff8107e351
+Jun 20 11:14:21 igw kernel:  ffffffff81c01fd8 ffffffffffffffff ffffffff81d29900 ffff88013ffb7300
+Jun 20 11:14:21 igw kernel:  ffffffff81d300a0 0000000000000000 ffffffff81c01f80 ffffffff816c2402
+Jun 20 11:14:21 igw kernel: Call Trace:
+Jun 20 11:14:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:14:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:14:21 igw kernel:  [<ffffffff816c2402>] rest_init+0x72/0x80
+Jun 20 11:14:21 igw kernel:  [<ffffffff81ca7e2f>] start_kernel+0x3c4/0x3cf
+Jun 20 11:14:21 igw kernel:  [<ffffffff81ca7874>] ? repair_env_string+0x5c/0x5c
+Jun 20 11:14:21 igw kernel:  [<ffffffff81ca75ad>] x86_64_start_reservations+0x2a/0x2c
+Jun 20 11:14:21 igw kernel:  [<ffffffff81ca767b>] x86_64_start_kernel+0xcc/0xcf
+Jun 20 11:14:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:14:21 igw kernel: NMI backtrace for cpu 1
+Jun 20 11:14:21 igw kernel: CPU: 1 PID: 0 Comm: swapper/1 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:14:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:14:21 igw kernel: task: ffff88013aba6460 ti: ffff88013abc0000 task.ti: ffff88013abc0000
+Jun 20 11:14:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:14:21 igw kernel: RSP: 0018:ffff88013abc1ed8  EFLAGS: 00000246
+Jun 20 11:14:21 igw kernel: RAX: ffff88013fc4c240 RBX: ffff88013abc1fd8 RCX: 0100000000000000
+Jun 20 11:14:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc4c240
+Jun 20 11:14:21 igw kernel: RBP: ffff88013abc1ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:14:21 igw kernel: R10: 000000000000001a R11: ffff88013abf1428 R12: ffffffff81c84498
+Jun 20 11:14:21 igw kernel: R13: ffff88013abc1fd8 R14: ffff88013abc1fd8 R15: ffff88013abc1fd8
+Jun 20 11:14:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc40000(0000) knlGS:0000000000000000
+Jun 20 11:14:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:14:21 igw kernel: CR2: 00007f8e55b61580 CR3: 0000000139a2e000 CR4: 00000000000007e0
+Jun 20 11:14:21 igw kernel: Stack:
+Jun 20 11:14:21 igw kernel:  ffff88013abc1ee8 ffffffff8100bbda ffff88013abc1f28 ffffffff8107e351
+Jun 20 11:14:21 igw kernel:  ffff88013abc1fd8 0000000000000001 0000000000000001 0000000000000000
+Jun 20 11:14:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc1f48 ffffffff8102aa0f
+Jun 20 11:14:21 igw kernel: Call Trace:
+Jun 20 11:14:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:14:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:14:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:14:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:14:21 igw kernel: NMI backtrace for cpu 3
+Jun 20 11:14:21 igw kernel: CPU: 3 PID: 0 Comm: swapper/3 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:14:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:14:21 igw kernel: task: ffff88013aba76a0 ti: ffff88013abc4000 task.ti: ffff88013abc4000
+Jun 20 11:14:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:14:21 igw kernel: RSP: 0018:ffff88013abc5ed8  EFLAGS: 00000246
+Jun 20 11:14:21 igw kernel: RAX: ffff88013fccc240 RBX: ffff88013abc5fd8 RCX: 0100000000000000
+Jun 20 11:14:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fccc240
+Jun 20 11:14:21 igw kernel: RBP: ffff88013abc5ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:14:21 igw kernel: R10: 0000000000000013 R11: ffff88013a411028 R12: ffffffff81c84498
+Jun 20 11:14:21 igw kernel: R13: ffff88013abc5fd8 R14: ffff88013abc5fd8 R15: ffff88013abc5fd8
+Jun 20 11:14:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fcc0000(0000) knlGS:0000000000000000
+Jun 20 11:14:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:14:21 igw kernel: CR2: 00007f68076776f0 CR3: 00000000bb2e2000 CR4: 00000000000007e0
+Jun 20 11:14:21 igw kernel: Stack:
+Jun 20 11:14:21 igw kernel:  ffff88013abc5ee8 ffffffff8100bbda ffff88013abc5f28 ffffffff8107e351
+Jun 20 11:14:21 igw kernel:  ffff88013abc5fd8 0000000000000003 0000000000000003 0000000000000000
+Jun 20 11:14:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc5f48 ffffffff8102aa0f
+Jun 20 11:14:21 igw kernel: Call Trace:
+Jun 20 11:14:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:14:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:14:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:14:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:14:21 igw kernel: NMI backtrace for cpu 2
+Jun 20 11:14:21 igw kernel: CPU: 2 PID: 0 Comm: swapper/2 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:14:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:14:21 igw kernel: task: ffff88013aba6d80 ti: ffff88013abc2000 task.ti: ffff88013abc2000
+Jun 20 11:14:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:14:21 igw kernel: RSP: 0018:ffff88013abc3ed8  EFLAGS: 00000246
+Jun 20 11:14:21 igw kernel: RAX: ffff88013fc8c240 RBX: ffff88013abc3fd8 RCX: 0100000000000000
+Jun 20 11:14:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc8c240
+Jun 20 11:14:21 igw kernel: RBP: ffff88013abc3ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:14:21 igw kernel: R10: 000000000000001a R11: ffff88013abfd428 R12: ffffffff81c84498
+Jun 20 11:14:21 igw kernel: R13: ffff88013abc3fd8 R14: ffff88013abc3fd8 R15: ffff88013abc3fd8
+Jun 20 11:14:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc80000(0000) knlGS:0000000000000000
+Jun 20 11:14:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:14:21 igw kernel: CR2: 00007fcaa760b565 CR3: 00000000bb82f000 CR4: 00000000000007e0
+Jun 20 11:14:21 igw kernel: Stack:
+Jun 20 11:14:21 igw kernel:  ffff88013abc3ee8 ffffffff8100bbda ffff88013abc3f28 ffffffff8107e351
+Jun 20 11:14:21 igw kernel:  ffff88013abc3fd8 0000000000000002 0000000000000002 0000000000000000
+Jun 20 11:14:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc3f48 ffffffff8102aa0f
+Jun 20 11:14:21 igw kernel: Call Trace:
+Jun 20 11:14:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:14:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:14:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:14:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:14:21 igw kernel: NMI backtrace for cpu 4
+Jun 20 11:14:21 igw kernel: CPU: 4 PID: 0 Comm: swapper/4 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:14:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:14:21 igw kernel: task: ffff88013abc8000 ti: ffff88013abc6000 task.ti: ffff88013abc6000
+Jun 20 11:14:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:14:21 igw kernel: RSP: 0018:ffff88013abc7ed8  EFLAGS: 00000246
+Jun 20 11:14:21 igw kernel: RAX: ffff88013fd0c240 RBX: ffff88013abc7fd8 RCX: 0100000000000000
+Jun 20 11:14:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd0c240
+Jun 20 11:14:21 igw kernel: RBP: ffff88013abc7ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:14:21 igw kernel: R10: 000000000000001a R11: ffff88013a425428 R12: ffffffff81c84498
+Jun 20 11:14:21 igw kernel: R13: ffff88013abc7fd8 R14: ffff88013abc7fd8 R15: ffff88013abc7fd8
+Jun 20 11:14:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd00000(0000) knlGS:0000000000000000
+Jun 20 11:14:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:14:21 igw kernel: CR2: 00007f72685a01a8 CR3: 00000000bb2e2000 CR4: 00000000000007e0
+Jun 20 11:14:21 igw kernel: Stack:
+Jun 20 11:14:21 igw kernel:  ffff88013abc7ee8 ffffffff8100bbda ffff88013abc7f28 ffffffff8107e351
+Jun 20 11:14:21 igw kernel:  ffff88013abc7fd8 0000000000000004 0000000000000004 0000000000000000
+Jun 20 11:14:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc7f48 ffffffff8102aa0f
+Jun 20 11:14:21 igw kernel: Call Trace:
+Jun 20 11:14:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:14:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:14:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:14:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:14:21 igw kernel: NMI backtrace for cpu 5
+Jun 20 11:14:21 igw kernel: CPU: 5 PID: 0 Comm: swapper/5 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:14:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:14:21 igw kernel: task: ffff88013abc8920 ti: ffff88013abd0000 task.ti: ffff88013abd0000
+Jun 20 11:14:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:14:21 igw kernel: RSP: 0018:ffff88013abd1ed8  EFLAGS: 00000246
+Jun 20 11:14:21 igw kernel: RAX: ffff88013fd4c240 RBX: ffff88013abd1fd8 RCX: 0100000000000000
+Jun 20 11:14:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd4c240
+Jun 20 11:14:21 igw kernel: RBP: ffff88013abd1ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:14:21 igw kernel: R10: 000000000000001a R11: ffff88013a431428 R12: ffffffff81c84498
+Jun 20 11:14:21 igw kernel: R13: ffff88013abd1fd8 R14: ffff88013abd1fd8 R15: ffff88013abd1fd8
+Jun 20 11:14:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd40000(0000) knlGS:0000000000000000
+Jun 20 11:14:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:14:21 igw kernel: CR2: 00000000006a9440 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:14:21 igw kernel: Stack:
+Jun 20 11:14:21 igw kernel:  ffff88013abd1ee8 ffffffff8100bbda ffff88013abd1f28 ffffffff8107e351
+Jun 20 11:14:21 igw kernel:  ffff88013abd1fd8 0000000000000005 0000000000000005 0000000000000000
+Jun 20 11:14:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abd1f48 ffffffff8102aa0f
+Jun 20 11:14:21 igw kernel: Call Trace:
+Jun 20 11:14:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:14:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:14:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:14:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:14:21 igw kernel: NMI backtrace for cpu 6
+Jun 20 11:14:21 igw kernel: CPU: 6 PID: 0 Comm: swapper/6 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:14:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:14:21 igw kernel: task: ffff88013abc9240 ti: ffff88013abd2000 task.ti: ffff88013abd2000
+Jun 20 11:14:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:14:21 igw kernel: RSP: 0018:ffff88013abd3ed8  EFLAGS: 00000246
+Jun 20 11:14:21 igw kernel: RAX: ffff88013fd8c240 RBX: ffff88013abd3fd8 RCX: 0100000000000000
+Jun 20 11:14:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd8c240
+Jun 20 11:14:21 igw kernel: RBP: ffff88013abd3ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:14:21 igw kernel: R10: 000000000000001a R11: ffff88013a43d428 R12: ffffffff81c84498
+Jun 20 11:14:21 igw kernel: R13: ffff88013abd3fd8 R14: ffff88013abd3fd8 R15: ffff88013abd3fd8
+Jun 20 11:14:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd80000(0000) knlGS:0000000000000000
+Jun 20 11:14:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:14:21 igw kernel: CR2: 00007f14a232f000 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:14:21 igw kernel: Stack:
+Jun 20 11:14:21 igw kernel:  ffff88013abd3ee8 ffffffff8100bbda ffff88013abd3f28 ffffffff8107e351
+Jun 20 11:14:21 igw kernel:  ffff88013abd3fd8 0000000000000006 0000000000000006 0000000000000000
+Jun 20 11:14:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abd3f48 ffffffff8102aa0f
+Jun 20 11:14:21 igw kernel: Call Trace:
+Jun 20 11:14:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:14:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:14:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:14:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48
+Jun 20 11:14:21 igw kernel: INFO: rcu_sched detected stalls on CPUs/tasks:
+Jun 20 11:14:21 igw kernel: 89
+Jun 20 11:14:21 igw kernel: fe 48 c7 c7
+Jun 20 11:14:21 igw kernel:  {
+Jun 20 11:14:21 igw kernel:  7
+Jun 20 11:14:21 igw kernel: }
+Jun 20 11:14:21 igw kernel: (detected by 0, t=420012 jiffies, g=5260, c=5259, q=0)
+Jun 20 11:14:21 igw kernel: 40
+Jun 20 11:14:21 igw kernel: b7 de 81
+Jun 20 11:14:21 igw kernel: NMI backtrace for cpu 7
+Jun 20 11:14:21 igw kernel: CPU: 7 PID: 1460 Comm: kworker/7:1 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:14:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:14:21 igw kernel: Workqueue: ipv6_addrconf addrconf_dad_work
+Jun 20 11:14:21 igw kernel: task: ffff88013a442480 ti: ffff88013a37c000 task.ti: ffff88013a37c000
+Jun 20 11:14:21 igw kernel: RIP: 0010:[<ffffffff8102d32c>]  [<ffffffff8102d32c>] default_send_IPI_mask_sequence_phys+0x9c/0xd0
+Jun 20 11:14:21 igw kernel: RSP: 0018:ffff88013fdc3dc8  EFLAGS: 00000046
+Jun 20 11:14:21 igw kernel: RAX: 0000000000000400 RBX: 000000000000a032 RCX: 0000000000000030
+Jun 20 11:14:21 igw kernel: RDX: 0000000000000007 RSI: 0000000000000007 RDI: 0000000000000300
+Jun 20 11:14:21 igw kernel: RBP: ffff88013fdc3e00 R08: ffffffff81c84498 R09: 00000000000006c9
+Jun 20 11:14:21 igw kernel: R10: 61206f7420494d4e R11: 3a73555043206c6c R12: ffffffff81c84498
+Jun 20 11:14:21 igw kernel: R13: 0000000000000400 R14: 0000000000000082 R15: 0000000000000002
+Jun 20 11:14:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fdc0000(0000) knlGS:0000000000000000
+Jun 20 11:14:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:14:21 igw kernel: CR2: 00000000006aa058 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:14:21 igw kernel: Stack:
+Jun 20 11:14:21 igw kernel:  0000000700000008 0000000000000007 0000000000002710 ffffffff81c33400
+Jun 20 11:14:21 igw kernel:  ffffffff81c844a0 ffffffff81c33400 0000000000000007 ffff88013fdc3e10
+Jun 20 11:14:21 igw kernel:  ffffffff81030482 ffff88013fdc3e28 ffffffff8102d506 ffff88013fdcc400
+Jun 20 11:14:21 igw kernel: Call Trace:
+Jun 20 11:14:21 igw kernel:  <IRQ>
+Jun 20 11:14:21 igw kernel:
+Jun 20 11:14:21 igw kernel:  [<ffffffff81030482>] physflat_send_IPI_all+0x12/0x20
+Jun 20 11:14:21 igw kernel:  [<ffffffff8102d506>] arch_trigger_all_cpu_backtrace+0x46/0x80
+Jun 20 11:14:21 igw kernel:  [<ffffffff8108754e>] rcu_check_callbacks+0x3ae/0x670
+Jun 20 11:14:21 igw kernel:  [<ffffffff8104ba92>] update_process_times+0x42/0x70
+Jun 20 11:14:21 igw kernel:  [<ffffffff81091561>] tick_sched_handle.isra.17+0x31/0x40
+Jun 20 11:14:21 igw kernel:  [<ffffffff81091689>] tick_sched_timer+0x39/0x60
+Jun 20 11:14:21 igw kernel:  [<ffffffff81060501>] __run_hrtimer.isra.32+0x41/0xf0
+Jun 20 11:14:21 igw kernel:  [<ffffffff81060c25>] hrtimer_interrupt+0xe5/0x220
+Jun 20 11:14:21 igw kernel:  [<ffffffff8102be22>] local_apic_timer_interrupt+0x32/0x60
+Jun 20 11:14:21 igw kernel:  [<ffffffff8102c16a>] smp_apic_timer_interrupt+0x3a/0x50
+Jun 20 11:14:21 igw kernel:  [<ffffffff816d190a>] apic_timer_interrupt+0x6a/0x70
+Jun 20 11:14:21 igw kernel:  <EOI>
+Jun 20 11:14:21 igw kernel:
+Jun 20 11:14:21 igw kernel:  [<ffffffff816d0215>] ? _raw_spin_lock_bh+0x25/0x40
+Jun 20 11:14:21 igw kernel:  [<ffffffff815a5c69>] ? qdisc_dequeue_skb+0x29/0x70
+Jun 20 11:14:21 igw kernel:  [<ffffffff8146f828>] __imq_nf_queue+0x1a8/0x5f0
+Jun 20 11:14:21 igw kernel:  [<ffffffff8146fe1c>] imq_nf_queue+0x1ac/0x370
+Jun 20 11:14:21 igw kernel:  [<ffffffff815d13fd>] nf_queue+0x13d/0x180
+Jun 20 11:14:21 igw kernel:  [<ffffffff81589d50>] ? list_netdevice+0x120/0x120
+Jun 20 11:14:21 igw kernel:  [<ffffffff815d0766>] nf_hook_slow+0xb6/0x150
+Jun 20 11:14:21 igw kernel:  [<ffffffff81589d50>] ? list_netdevice+0x120/0x120
+Jun 20 11:14:21 igw kernel:  [<ffffffff816793b0>] ip6_finish_output2+0x320/0x420
+Jun 20 11:14:21 igw kernel:  [<ffffffff8167bcc4>] ip6_finish_output+0x84/0xd0
+Jun 20 11:14:21 igw kernel:  [<ffffffff815d14a2>] nf_reinject+0x62/0x170
+Jun 20 11:14:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:14:21 igw kernel:  [<ffffffff815b3a94>] ? htb_dequeue+0x364/0x7e0
+Jun 20 11:14:21 igw kernel:  [<ffffffff8146f5c9>] imq_dev_xmit+0x89/0xc0
+Jun 20 11:14:21 igw kernel:  [<ffffffff8158beb3>] dev_hard_start_xmit+0x2c3/0x510
+Jun 20 11:14:21 igw kernel:  [<ffffffff8146f851>] __imq_nf_queue+0x1d1/0x5f0
+Jun 20 11:14:21 igw kernel:  [<ffffffff8146fe1c>] imq_nf_queue+0x1ac/0x370
+Jun 20 11:14:21 igw kernel:  [<ffffffff815d13fd>] nf_queue+0x13d/0x180
+Jun 20 11:14:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:14:21 igw kernel:  [<ffffffff815d0766>] nf_hook_slow+0xb6/0x150
+Jun 20 11:14:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:14:21 igw kernel:  [<ffffffff8167bd7e>] ip6_output+0x6e/0xc0
+Jun 20 11:14:21 igw kernel:  [<ffffffff8168ec7b>] ndisc_send_skb+0x20b/0x290
+Jun 20 11:14:21 igw kernel:  [<ffffffff8168fcb7>] ndisc_send_ns+0xc7/0x120
+Jun 20 11:14:21 igw kernel:  [<ffffffff81681bf0>] addrconf_dad_work+0x220/0x2e0
+Jun 20 11:14:21 igw kernel:  [<ffffffff810571e6>] process_one_work+0x146/0x3d0
+Jun 20 11:14:21 igw kernel:  [<ffffffff81057dd9>] worker_thread+0x119/0x390
+Jun 20 11:14:21 igw kernel:  [<ffffffff81057cc0>] ? manage_workers.isra.26+0x290/0x290
+Jun 20 11:14:21 igw kernel:  [<ffffffff8105d954>] kthread+0xc4/0xe0
+Jun 20 11:14:21 igw kernel:  [<ffffffff8105d890>] ? kthread_create_on_node+0x170/0x170
+Jun 20 11:14:21 igw kernel:  [<ffffffff816d0c98>] ret_from_fork+0x58/0x90
+Jun 20 11:14:21 igw kernel:  [<ffffffff8105d890>] ? kthread_create_on_node+0x170/0x170
+Jun 20 11:14:21 igw kernel: Code: 90 8b 0c 25 00 b3 5f ff 80 e5 10 75 f2 89 f0 c1 e0 18 89 04 25 10 b3 5f ff 41 83 ff 02 44 89 e8 41 0f 45 c7 89 04 25 00 b3 5f ff <eb> 92 41 56 9d 48 83 c4 10 5b 41 5c 41 5d 41 5e 41 5f 5d c3 48
+Jun 20 11:17:21 igw kernel: INFO: rcu_sched self-detected stall on CPU { 7}  (t=600015 jiffies g=5260 c=5259 q=0)
+Jun 20 11:17:21 igw kernel: sending NMI to all CPUs:
+Jun 20 11:17:21 igw kernel: NMI backtrace for cpu 0
+Jun 20 11:17:21 igw kernel: CPU: 0 PID: 0 Comm: swapper/0 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:17:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:17:21 igw kernel: task: ffffffff81c10480 ti: ffffffff81c00000 task.ti: ffffffff81c00000
+Jun 20 11:17:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:17:21 igw kernel: RSP: 0018:ffffffff81c01f20  EFLAGS: 00000246
+Jun 20 11:17:21 igw kernel: RAX: ffff88013fc0c240 RBX: ffffffff81c01fd8 RCX: 0100000000000000
+Jun 20 11:17:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc0c240
+Jun 20 11:17:21 igw kernel: RBP: ffffffff81c01f20 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:17:21 igw kernel: R10: 0000000000000400 R11: 0000000000000000 R12: ffffffff81c84498
+Jun 20 11:17:21 igw kernel: R13: ffffffff81c01fd8 R14: ffffffff81c01fd8 R15: ffffffff81c01fd8
+Jun 20 11:17:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc00000(0000) knlGS:0000000000000000
+Jun 20 11:17:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:17:21 igw kernel: CR2: 00000000006a9440 CR3: 00000000b8014000 CR4: 00000000000007f0
+Jun 20 11:17:21 igw kernel: Stack:
+Jun 20 11:17:21 igw kernel:  ffffffff81c01f30 ffffffff8100bbda ffffffff81c01f70 ffffffff8107e351
+Jun 20 11:17:21 igw kernel:  ffffffff81c01fd8 ffffffffffffffff ffffffff81d29900 ffff88013ffb7300
+Jun 20 11:17:21 igw kernel:  ffffffff81d300a0 0000000000000000 ffffffff81c01f80 ffffffff816c2402
+Jun 20 11:17:21 igw kernel: Call Trace:
+Jun 20 11:17:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:17:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:17:21 igw kernel:  [<ffffffff816c2402>] rest_init+0x72/0x80
+Jun 20 11:17:21 igw kernel:  [<ffffffff81ca7e2f>] start_kernel+0x3c4/0x3cf
+Jun 20 11:17:21 igw kernel:  [<ffffffff81ca7874>] ? repair_env_string+0x5c/0x5c
+Jun 20 11:17:21 igw kernel:  [<ffffffff81ca75ad>] x86_64_start_reservations+0x2a/0x2c
+Jun 20 11:17:21 igw kernel:  [<ffffffff81ca767b>] x86_64_start_kernel+0xcc/0xcf
+Jun 20 11:17:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:17:21 igw kernel: NMI backtrace for cpu 1
+Jun 20 11:17:21 igw kernel: CPU: 1 PID: 0 Comm: swapper/1 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:17:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:17:21 igw kernel: task: ffff88013aba6460 ti: ffff88013abc0000 task.ti: ffff88013abc0000
+Jun 20 11:17:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:17:21 igw kernel: RSP: 0018:ffff88013abc1ed8  EFLAGS: 00000246
+Jun 20 11:17:21 igw kernel: RAX: ffff88013fc4c240 RBX: ffff88013abc1fd8 RCX: 0100000000000000
+Jun 20 11:17:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc4c240
+Jun 20 11:17:21 igw kernel: RBP: ffff88013abc1ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:17:21 igw kernel: R10: 0000000000000010 R11: ffff88013abf1028 R12: ffffffff81c84498
+Jun 20 11:17:21 igw kernel: R13: ffff88013abc1fd8 R14: ffff88013abc1fd8 R15: ffff88013abc1fd8
+Jun 20 11:17:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc40000(0000) knlGS:0000000000000000
+Jun 20 11:17:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:17:21 igw kernel: CR2: 00007f4bc38fb6f0 CR3: 0000000139a2e000 CR4: 00000000000007e0
+Jun 20 11:17:21 igw kernel: Stack:
+Jun 20 11:17:21 igw kernel:  ffff88013abc1ee8 ffffffff8100bbda ffff88013abc1f28 ffffffff8107e351
+Jun 20 11:17:21 igw kernel:  ffff88013abc1fd8 0000000000000001 0000000000000001 0000000000000000
+Jun 20 11:17:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc1f48 ffffffff8102aa0f
+Jun 20 11:17:21 igw kernel: Call Trace:
+Jun 20 11:17:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:17:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:17:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:17:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:17:21 igw kernel: NMI backtrace for cpu 6
+Jun 20 11:17:21 igw kernel: CPU: 6 PID: 0 Comm: swapper/6 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:17:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:17:21 igw kernel: task: ffff88013abc9240 ti: ffff88013abd2000 task.ti: ffff88013abd2000
+Jun 20 11:17:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:17:21 igw kernel: RSP: 0018:ffff88013abd3ed8  EFLAGS: 00000246
+Jun 20 11:17:21 igw kernel: RAX: ffff88013fd8c240 RBX: ffff88013abd3fd8 RCX: 0100000000000000
+Jun 20 11:17:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd8c240
+Jun 20 11:17:21 igw kernel: RBP: ffff88013abd3ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:17:21 igw kernel: R10: 0000000000000013 R11: ffff88013a43d028 R12: ffffffff81c84498
+Jun 20 11:17:21 igw kernel: R13: ffff88013abd3fd8 R14: ffff88013abd3fd8 R15: ffff88013abd3fd8
+Jun 20 11:17:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd80000(0000) knlGS:0000000000000000
+Jun 20 11:17:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:17:21 igw kernel: CR2: 00007f14a232f000 CR3: 00000000bb3c7000 CR4: 00000000000007e0
+Jun 20 11:17:21 igw kernel: Stack:
+Jun 20 11:17:21 igw kernel:  ffff88013abd3ee8 ffffffff8100bbda ffff88013abd3f28 ffffffff8107e351
+Jun 20 11:17:21 igw kernel:  ffff88013abd3fd8 0000000000000006 0000000000000006 0000000000000000
+Jun 20 11:17:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abd3f48 ffffffff8102aa0f
+Jun 20 11:17:21 igw kernel: Call Trace:
+Jun 20 11:17:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:17:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:17:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:17:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:17:21 igw kernel: NMI backtrace for cpu 2
+Jun 20 11:17:21 igw kernel: CPU: 2 PID: 0 Comm: swapper/2 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:17:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:17:21 igw kernel: task: ffff88013aba6d80 ti: ffff88013abc2000 task.ti: ffff88013abc2000
+Jun 20 11:17:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:17:21 igw kernel: RSP: 0018:ffff88013abc3ed8  EFLAGS: 00000246
+Jun 20 11:17:21 igw kernel: RAX: ffff88013fc8c240 RBX: ffff88013abc3fd8 RCX: 0100000000000000
+Jun 20 11:17:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc8c240
+Jun 20 11:17:21 igw kernel: RBP: ffff88013abc3ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:17:21 igw kernel: R10: 0000000000000010 R11: ffff88013abfd028 R12: ffffffff81c84498
+Jun 20 11:17:21 igw kernel: R13: ffff88013abc3fd8 R14: ffff88013abc3fd8 R15: ffff88013abc3fd8
+Jun 20 11:17:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc80000(0000) knlGS:0000000000000000
+Jun 20 11:17:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:17:21 igw kernel: CR2: 00007fcaa760b565 CR3: 00000000bb82f000 CR4: 00000000000007e0
+Jun 20 11:17:21 igw kernel: Stack:
+Jun 20 11:17:21 igw kernel:  ffff88013abc3ee8 ffffffff8100bbda ffff88013abc3f28 ffffffff8107e351
+Jun 20 11:17:21 igw kernel:  ffff88013abc3fd8 0000000000000002 0000000000000002 0000000000000000
+Jun 20 11:17:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc3f48 ffffffff8102aa0f
+Jun 20 11:17:21 igw kernel: Call Trace:
+Jun 20 11:17:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:17:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:17:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:17:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:17:21 igw kernel: NMI backtrace for cpu 5
+Jun 20 11:17:21 igw kernel: CPU: 5 PID: 0 Comm: swapper/5 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:17:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:17:21 igw kernel: task: ffff88013abc8920 ti: ffff88013abd0000 task.ti: ffff88013abd0000
+Jun 20 11:17:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:17:21 igw kernel: RSP: 0018:ffff88013abd1ed8  EFLAGS: 00000246
+Jun 20 11:17:21 igw kernel: RAX: ffff88013fd4c240 RBX: ffff88013abd1fd8 RCX: 0100000000000000
+Jun 20 11:17:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd4c240
+Jun 20 11:17:21 igw kernel: RBP: ffff88013abd1ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:17:21 igw kernel: R10: 0000000000000013 R11: ffff88013a431028 R12: ffffffff81c84498
+Jun 20 11:17:21 igw kernel: R13: ffff88013abd1fd8 R14: ffff88013abd1fd8 R15: ffff88013abd1fd8
+Jun 20 11:17:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd40000(0000) knlGS:0000000000000000
+Jun 20 11:17:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:17:21 igw kernel: CR2: 00000000006a9440 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:17:21 igw kernel: Stack:
+Jun 20 11:17:21 igw kernel:  ffff88013abd1ee8 ffffffff8100bbda ffff88013abd1f28 ffffffff8107e351
+Jun 20 11:17:21 igw kernel:  ffff88013abd1fd8 0000000000000005 0000000000000005 0000000000000000
+Jun 20 11:17:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abd1f48 ffffffff8102aa0f
+Jun 20 11:17:21 igw kernel: Call Trace:
+Jun 20 11:17:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:17:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:17:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:17:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:17:21 igw kernel: NMI backtrace for cpu 7
+Jun 20 11:17:21 igw kernel: CPU: 7 PID: 1460 Comm: kworker/7:1 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:17:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:17:21 igw kernel: Workqueue: ipv6_addrconf addrconf_dad_work
+Jun 20 11:17:21 igw kernel: task: ffff88013a442480 ti: ffff88013a37c000 task.ti: ffff88013a37c000
+Jun 20 11:17:21 igw kernel: RIP: 0010:[<ffffffff8102d32c>]  [<ffffffff8102d32c>] default_send_IPI_mask_sequence_phys+0x9c/0xd0
+Jun 20 11:17:21 igw kernel: RSP: 0018:ffff88013fdc3dc8  EFLAGS: 00000046
+Jun 20 11:17:21 igw kernel: RAX: 0000000000000400 RBX: 000000000000a032 RCX: 0000000000000030
+Jun 20 11:17:21 igw kernel: RDX: 0000000000000007 RSI: 0000000000000007 RDI: 0000000000000300
+Jun 20 11:17:21 igw kernel: RBP: ffff88013fdc3e00 R08: ffffffff81c84498 R09: 00000000000007bd
+Jun 20 11:17:21 igw kernel: R10: 61206f7420494d4e R11: 3a73555043206c6c R12: ffffffff81c84498
+Jun 20 11:17:21 igw kernel: R13: 0000000000000400 R14: 0000000000000082 R15: 0000000000000002
+Jun 20 11:17:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fdc0000(0000) knlGS:0000000000000000
+Jun 20 11:17:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:17:21 igw kernel: CR2: 00000000006aa058 CR3: 0000000001c0b000 CR4: 00000000000007e0
+Jun 20 11:17:21 igw kernel: Stack:
+Jun 20 11:17:21 igw kernel:  0000000700000008 0000000000000007 0000000000002710 ffffffff81c33400
+Jun 20 11:17:21 igw kernel:  ffffffff81c844a0 ffffffff81c33400 0000000000000007 ffff88013fdc3e10
+Jun 20 11:17:21 igw kernel:  ffffffff81030482 ffff88013fdc3e28 ffffffff8102d506 ffff88013fdcc400
+Jun 20 11:17:21 igw kernel: Call Trace:
+Jun 20 11:17:21 igw kernel:  <IRQ>
+Jun 20 11:17:21 igw kernel:
+Jun 20 11:17:21 igw kernel:  [<ffffffff81030482>] physflat_send_IPI_all+0x12/0x20
+Jun 20 11:17:21 igw kernel:  [<ffffffff8102d506>] arch_trigger_all_cpu_backtrace+0x46/0x80
+Jun 20 11:17:21 igw kernel:  [<ffffffff8108754e>] rcu_check_callbacks+0x3ae/0x670
+Jun 20 11:17:21 igw kernel:  [<ffffffff8104ba92>] update_process_times+0x42/0x70
+Jun 20 11:17:21 igw kernel:  [<ffffffff81091561>] tick_sched_handle.isra.17+0x31/0x40
+Jun 20 11:17:21 igw kernel:  [<ffffffff81091689>] tick_sched_timer+0x39/0x60
+Jun 20 11:17:21 igw kernel:  [<ffffffff81060501>] __run_hrtimer.isra.32+0x41/0xf0
+Jun 20 11:17:21 igw kernel:  [<ffffffff81060c25>] hrtimer_interrupt+0xe5/0x220
+Jun 20 11:17:21 igw kernel:  [<ffffffff8102be22>] local_apic_timer_interrupt+0x32/0x60
+Jun 20 11:17:21 igw kernel:  [<ffffffff8102c16a>] smp_apic_timer_interrupt+0x3a/0x50
+Jun 20 11:17:21 igw kernel:  [<ffffffff816d190a>] apic_timer_interrupt+0x6a/0x70
+Jun 20 11:17:21 igw kernel:  <EOI>
+Jun 20 11:17:21 igw kernel:
+Jun 20 11:17:21 igw kernel:  [<ffffffff816d0215>] ? _raw_spin_lock_bh+0x25/0x40
+Jun 20 11:17:21 igw kernel:  [<ffffffff815a5c69>] ? qdisc_dequeue_skb+0x29/0x70
+Jun 20 11:17:21 igw kernel:  [<ffffffff8146f828>] __imq_nf_queue+0x1a8/0x5f0
+Jun 20 11:17:21 igw kernel:  [<ffffffff8146fe1c>] imq_nf_queue+0x1ac/0x370
+Jun 20 11:17:21 igw kernel:  [<ffffffff815d13fd>] nf_queue+0x13d/0x180
+Jun 20 11:17:21 igw kernel:  [<ffffffff81589d50>] ? list_netdevice+0x120/0x120
+Jun 20 11:17:21 igw kernel:  [<ffffffff815d0766>] nf_hook_slow+0xb6/0x150
+Jun 20 11:17:21 igw kernel:  [<ffffffff81589d50>] ? list_netdevice+0x120/0x120
+Jun 20 11:17:21 igw kernel:  [<ffffffff816793b0>] ip6_finish_output2+0x320/0x420
+Jun 20 11:17:21 igw kernel:  [<ffffffff8167bcc4>] ip6_finish_output+0x84/0xd0
+Jun 20 11:17:21 igw kernel:  [<ffffffff815d14a2>] nf_reinject+0x62/0x170
+Jun 20 11:17:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:17:21 igw kernel:  [<ffffffff815b3a94>] ? htb_dequeue+0x364/0x7e0
+Jun 20 11:17:21 igw kernel:  [<ffffffff8146f5c9>] imq_dev_xmit+0x89/0xc0
+Jun 20 11:17:21 igw kernel:  [<ffffffff8158beb3>] dev_hard_start_xmit+0x2c3/0x510
+Jun 20 11:17:21 igw kernel:  [<ffffffff8146f851>] __imq_nf_queue+0x1d1/0x5f0
+Jun 20 11:17:21 igw kernel:  [<ffffffff8146fe1c>] imq_nf_queue+0x1ac/0x370
+Jun 20 11:17:21 igw kernel:  [<ffffffff815d13fd>] nf_queue+0x13d/0x180
+Jun 20 11:17:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:17:21 igw kernel:  [<ffffffff815d0766>] nf_hook_slow+0xb6/0x150
+Jun 20 11:17:21 igw kernel:  [<ffffffff8167bc40>] ? ip6_fragment+0xab0/0xab0
+Jun 20 11:17:21 igw kernel:  [<ffffffff8167bd7e>] ip6_output+0x6e/0xc0
+Jun 20 11:17:21 igw kernel:  [<ffffffff8168ec7b>] ndisc_send_skb+0x20b/0x290
+Jun 20 11:17:21 igw kernel:  [<ffffffff8168fcb7>] ndisc_send_ns+0xc7/0x120
+Jun 20 11:17:21 igw kernel:  [<ffffffff81681bf0>] addrconf_dad_work+0x220/0x2e0
+Jun 20 11:17:21 igw kernel:  [<ffffffff810571e6>] process_one_work+0x146/0x3d0
+Jun 20 11:17:21 igw kernel:  [<ffffffff81057dd9>] worker_thread+0x119/0x390
+Jun 20 11:17:21 igw kernel:  [<ffffffff81057cc0>] ? manage_workers.isra.26+0x290/0x290
+Jun 20 11:17:21 igw kernel:  [<ffffffff8105d954>] kthread+0xc4/0xe0
+Jun 20 11:17:21 igw kernel:  [<ffffffff8105d890>] ? kthread_create_on_node+0x170/0x170
+Jun 20 11:17:21 igw kernel:  [<ffffffff816d0c98>] ret_from_fork+0x58/0x90
+Jun 20 11:17:21 igw kernel:  [<ffffffff8105d890>] ? kthread_create_on_node+0x170/0x170
+Jun 20 11:17:21 igw kernel: Code: 90 8b 0c 25 00 b3 5f ff 80 e5 10 75 f2 89 f0 c1 e0 18 89 04 25 10 b3 5f ff 41 83 ff 02 44 89 e8 41 0f 45 c7 89 04 25 00 b3 5f ff <eb> 92 41 56 9d 48 83 c4 10 5b 41 5c 41 5d 41 5e 41 5f 5d c3 48
+Jun 20 11:17:21 igw kernel: NMI backtrace for cpu 4
+Jun 20 11:17:21 igw kernel: CPU: 4 PID: 0 Comm: swapper/4 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:17:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:17:21 igw kernel: task: ffff88013abc8000 ti: ffff88013abc6000 task.ti: ffff88013abc6000
+Jun 20 11:17:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:17:21 igw kernel: RSP: 0018:ffff88013abc7ed8  EFLAGS: 00000246
+Jun 20 11:17:21 igw kernel: RAX: ffff88013fd0c240 RBX: ffff88013abc7fd8 RCX: 0100000000000000
+Jun 20 11:17:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fd0c240
+Jun 20 11:17:21 igw kernel: RBP: ffff88013abc7ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:17:21 igw kernel: R10: 0000000000000013 R11: ffff88013a425028 R12: ffffffff81c84498
+Jun 20 11:17:21 igw kernel: R13: ffff88013abc7fd8 R14: ffff88013abc7fd8 R15: ffff88013abc7fd8
+Jun 20 11:17:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fd00000(0000) knlGS:0000000000000000
+Jun 20 11:17:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:17:21 igw kernel: CR2: 00007f72685a01a8 CR3: 00000000bb2e2000 CR4: 00000000000007e0
+Jun 20 11:17:21 igw kernel: Stack:
+Jun 20 11:17:21 igw kernel:  ffff88013abc7ee8 ffffffff8100bbda ffff88013abc7f28 ffffffff8107e351
+Jun 20 11:17:21 igw kernel:  ffff88013abc7fd8 0000000000000004 0000000000000004 0000000000000000
+Jun 20 11:17:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc7f48 ffffffff8102aa0f
+Jun 20 11:17:21 igw kernel: Call Trace:
+Jun 20 11:17:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:17:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:17:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:17:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:17:21 igw kernel: NMI backtrace for cpu 3
+Jun 20 11:17:21 igw kernel: CPU: 3 PID: 0 Comm: swapper/3 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:17:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:17:21 igw kernel: task: ffff88013aba76a0 ti: ffff88013abc4000 task.ti: ffff88013abc4000
+Jun 20 11:17:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:17:21 igw kernel: RSP: 0018:ffff88013abc5ed8  EFLAGS: 00000246
+Jun 20 11:17:21 igw kernel: RAX: ffff88013fccc240 RBX: ffff88013abc5fd8 RCX: 0100000000000000
+Jun 20 11:17:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fccc240
+Jun 20 11:17:21 igw kernel: RBP: ffff88013abc5ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:17:21 igw kernel: R10: 0000000000000014 R11: ffff88013a411028 R12: ffffffff81c84498
+Jun 20 11:17:21 igw kernel: R13: ffff88013abc5fd8 R14: ffff88013abc5fd8 R15: ffff88013abc5fd8
+Jun 20 11:17:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fcc0000(0000) knlGS:0000000000000000
+Jun 20 11:17:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:17:21 igw kernel: CR2: 00007f68076776f0 CR3: 00000000bb2e2000 CR4: 00000000000007e0
+Jun 20 11:17:21 igw kernel: Stack:
+Jun 20 11:17:21 igw kernel:  ffff88013abc5ee8 ffffffff8100bbda ffff88013abc5f28 ffffffff8107e351
+Jun 20 11:17:21 igw kernel:  ffff88013abc5fd8 0000000000000003 0000000000000003 0000000000000000
+Jun 20 11:17:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc5f48 ffffffff8102aa0f
+Jun 20 11:17:21 igw kernel: Call Trace:
+Jun 20 11:17:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:17:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:17:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+Jun 20 11:17:21 igw kernel: Code: 21 ff ff ff 90 48 b8 00 00 00 00 01 00 00 00 48 89 07 e9 0e ff ff ff 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 55 48 89 e5 fb f4 <5d> c3 0f 1f 84 00 00 00 00 00 55 48 89 fe 48 c7 c7 40 b7 de 81
+Jun 20 11:17:21 igw kernel: INFO: rcu_sched detected stalls on CPUs/tasks: { 7} (detected by 0, t=600017 jiffies, g=5260, c=5259, q=0)
+Jun 20 11:20:01 igw cron[4077]: (root) CMD (test -x /usr/sbin/run-crons && /usr/sbin/run-crons)
+Jun 20 11:20:21 igw kernel: INFO: rcu_sched self-detected stall on CPU { 7}  (t=780020 jiffies g=5260 c=5259 q=0)
+Jun 20 11:20:21 igw kernel: sending NMI to all CPUs:
+Jun 20 11:20:21 igw kernel: NMI backtrace for cpu 1
+Jun 20 11:20:21 igw kernel: CPU: 1 PID: 0 Comm: swapper/1 Not tainted 3.14.41-gentoo-clx2-ab #1
+Jun 20 11:20:21 igw kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 07/31/2013
+Jun 20 11:20:21 igw kernel: task: ffff88013aba6460 ti: ffff88013abc0000 task.ti: ffff88013abc0000
+Jun 20 11:20:21 igw kernel: RIP: 0010:[<ffffffff8100b3d6>]  [<ffffffff8100b3d6>] default_idle+0x6/0x10
+Jun 20 11:20:21 igw kernel: RSP: 0018:ffff88013abc1ed8  EFLAGS: 00000246
+Jun 20 11:20:21 igw kernel: RAX: ffff88013fc4c240 RBX: ffff88013abc1fd8 RCX: 0100000000000000
+Jun 20 11:20:21 igw kernel: RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffff88013fc4c240
+Jun 20 11:20:21 igw kernel: RBP: ffff88013abc1ed8 R08: 0000000000000000 R09: 0000000000000000
+Jun 20 11:20:21 igw kernel: R10: 0000000000000030 R11: ffff88013abf1428 R12: ffffffff81c84498
+Jun 20 11:20:21 igw kernel: R13: ffff88013abc1fd8 R14: ffff88013abc1fd8 R15: ffff88013abc1fd8
+Jun 20 11:20:21 igw kernel: FS:  0000000000000000(0000) GS:ffff88013fc40000(0000) knlGS:0000000000000000
+Jun 20 11:20:21 igw kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 000000008005003b
+Jun 20 11:20:21 igw kernel: CR2: 00007fc4ebc216f0 CR3: 0000000139a2e000 CR4: 00000000000007e0
+Jun 20 11:20:21 igw kernel: Stack:
+Jun 20 11:20:21 igw kernel:  ffff88013abc1ee8 ffffffff8100bbda ffff88013abc1f28 ffffffff8107e351
+Jun 20 11:20:21 igw kernel:  ffff88013abc1fd8 0000000000000001 0000000000000001 0000000000000000
+Jun 20 11:20:21 igw kernel:  0000000000000000 0000000000000000 ffff88013abc1f48 ffffffff8102aa0f
+Jun 20 11:20:21 igw kernel: Call Trace:
+Jun 20 11:20:21 igw kernel:  [<ffffffff8100bbda>] arch_cpu_idle+0xa/0x10
+Jun 20 11:20:21 igw kernel:  [<ffffffff8107e351>] cpu_startup_entry+0x91/0x180
+Jun 20 11:20:21 igw kernel:  [<ffffffff8102aa0f>] start_secondary+0x19f/0x1f0
+

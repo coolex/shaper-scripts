@@ -16,11 +16,11 @@ ip6tables -A INPUT -i eth0 -j ACCEPT
 iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 ip6tables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 
-# Maskarada
+# MASQUERADE
 iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
 
-# Spust SHAPER
-/opt/shaper/shaper.sh
+# RUN SHAPER
+./shaper.sh
 
 ipset create non-shape-igw-ipv4 hash:net
 ipset create non-shape-igw-ipv6 hash:net family inet6
@@ -111,7 +111,7 @@ ip link set imq1 down
 fi
 
 if [ "$ACTION" = "" ]; then
-	echo "Pouzitelne prikazy jsou: start | stop | stop-shaper"
+	echo "Commands: start | stop | stop-shaper"
 fi
 
 
